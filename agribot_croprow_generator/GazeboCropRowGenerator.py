@@ -8,8 +8,8 @@ GENERATE_FILE = True
 def y(x, m, b):
     return m*x + b
 
-Row_Num = 5
-Max_BPR = 50 # maximum Big plants in each row
+Row_Num = 2
+Max_BPR = 10 # maximum Big plants in each row
 Max_SPR = 0 # maximum Small plant in each row
 Row_lenght = 15 # in meters
 Random_noise_magnitude = 1 # maximum random noise magitude in meters
@@ -39,7 +39,7 @@ Y_P  = np.zeros((Row_Num, Max_BPR))
 Y_W  = np.zeros((Row_Num, Max_SPR))
 
 for i in range(Row_Num):
-    random.seed(a=None, version=2)
+    random.seed(2)
     X_P[i] = np.linspace(x_offset, x_offset + Row_lenght, Max_BPR)
     X_W[i] = np.linspace(x_offset, x_offset + Row_lenght, Max_SPR)
     Y_P[i] = [y(x, CropRow_Slope, i * CropRow_Offset + y_offset) + abs(random.gauss(Pose_Y,Sigma_Plant_dis)) for x in X_P[i]]
@@ -52,16 +52,16 @@ plt.show()
 
 if GENERATE_FILE:
     # Output files
-    Headers_path = 'CropRow_Headers.xml'
-    Models_path = 'CropRow_Models.xml'
+    Headers_path = "CropRow_Headers.xml"
+    Models_path = "CropRow_Models.xml"
     new_Headers = open(Headers_path,'w')
     new_Models = open(Models_path,'w')
 
     # Inputs files
-    BP_HEADER_path = 'BP_header.xml'
+    BP_HEADER_path = "BP_header.xml"
     BP_MODEL_path = 'BP_model.xml'
-    SP_HEADER_path = 'SP_header.xml'
-    SP_MODEL_path = 'SP_model.xml'
+    SP_HEADER_path = "SP_header.xml"
+    SP_MODEL_path = "SP_model.xml"
 
     BP_HEADER = open(BP_HEADER_path,'r')
     BP_MODEL = open(BP_MODEL_path,'r')
@@ -73,28 +73,28 @@ if GENERATE_FILE:
     SP_HEADER_content = SP_HEADER.read()
     SP_MODEL_content = SP_MODEL.read()
 
-    Pose = "<pose frame=''>" + str(Pose_X) + " " + str(Pose_Y) + " " + str(Pose_H) + " 0 -0 0</pose>\n"
-    model_def = "\n</model>\n"
-    scale = "<scale>1 1 1</scale>\n"
-    BP_link_name = "<link name='link_0'>\n"
-    SP_link_name = "<link name='link_0'>\n"
+    # Pose = "\t\t\t\t<pose frame=''>" + str(Pose_X) + " " + str(Pose_Y) + " " + str(Pose_H) + " 0 -0 0</pose>\n"
+    model_def = "\n\t\t</model>\n"
+    scale = "\t\t\t<scale>1 1 1</scale>\n"
+    BP_link_name = "\t\t\t<link name='link_0'>\n"
+    SP_link_name = "\t\t\t<link name='link_0'>\n"
 
     # Big plants
     for i in range(Row_Num):
         for x in range(Max_BPR):
-            BP_name = "\n<model name='big_plant_" + str(x+ i*Max_BPR) + "'>\n"
+            BP_name = "\n\t\t<model name='big_plant_" + str(x+ i*Max_BPR) + "'>\n"
             new_Headers.write(BP_name)
-            Pose = "<pose frame=''>" + str(X_P[i][x]) + " " + str(Y_P[i][x]) + " " + str(0) + " 0 -0 0</pose>\n"
+            Pose = "\t\t\t<pose frame=''>" + str(X_P[i][x]) + " " + str(Y_P[i][x]) + " " + str(0) + " 0 -0 0</pose>\n"
             new_Headers.write(Pose)
             new_Headers.write(scale)
             new_Headers.write(BP_link_name)
-            Pose = "<pose frame=''>" + str(X_P[i][x]) + " " + str(Y_P[i][x]) + " " + str(BP_H) + " 0 -0 0</pose>\n"
+            Pose = "\t\t\t\t<pose frame=''>" + str(X_P[i][x]) + " " + str(Y_P[i][x]) + " " + str(BP_H) + " 0 -0 0</pose>\n"
             new_Headers.write(Pose)
             new_Headers.write(BP_HEADER_content)
 
             new_Models.write(BP_name)
             new_Models.write(BP_MODEL_content)
-            Pose = "\n<pose frame=''>" + str(X_P[i][x]) + " " + str(Y_P[i][x]) + " " + str(0) + " 0 -0 0</pose>\n"
+            Pose = "\n\t\t\t<pose frame=''>" + str(X_P[i][x]) + " " + str(Y_P[i][x]) + " " + str(0) + " 0 -0 0</pose>\n"
             new_Models.write(Pose)
             new_Models.write(model_def)
 
@@ -124,9 +124,9 @@ if GENERATE_FILE:
     new_Models.close()
 
     # Output files
-    P1_path = 'farm_P1.xml'
-    P2_path = 'farm_P2.xml'
-    P3_path = 'farm_P3.xml'
+    P1_path = "farm_P1.xml"
+    P2_path = "farm_P2.xml"
+    P3_path = "farm_P3.xml"
     farm_P1 = open(P1_path,'r')
     farm_P2 = open(P2_path,'r')
     farm_P3 = open(P3_path,'r')
@@ -149,9 +149,10 @@ if GENERATE_FILE:
     Final_World.write(farm_P2_content)
     Final_World.write(new_Models_read)
     Final_World.write(farm_P3_content)
+    
+    
 
     farm_P1.close()
     farm_P2.close()
     farm_P3.close()
     Final_World.close()
-    

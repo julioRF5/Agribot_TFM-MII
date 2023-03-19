@@ -8,10 +8,11 @@ GENERATE_FILE = True
 def y(x, m, b):
     return m*x + b
 
-Row_Num = 2
-Max_BPR = 10 # maximum Big plants in each row
+Row_Num = 3
+hilera = 2 #Numero de plantas en paralelo por cada hilera
+Max_BPR = 50 # maximum Big plants in each row
 Max_SPR = 0 # maximum Small plant in each row
-Row_lenght = 15 # in meters
+Row_lenght = 50 # in meters
 Random_noise_magnitude = 1 # maximum random noise magitude in meters
 
 SP_H = 0.110674
@@ -27,27 +28,36 @@ Max_dis_plants = 0.1 # maximum distace between two plants in a row in m
 Sigma_Plant_dis = 0.02
 Sigma_Weed_dis = 0.005
 
-CropRow_Slope = 0
-CropRow_Offset = 0.8
+CropRow_Slope = 0  #pendiente de las hileras
+CropRow_Offset = 0.1  # Separacion entre fila de una misma hilera
 
-x_offset = 4
-y_offset = 0
+x_offset = 0.0
+y_offset = 0.0
 
-X_P  = np.zeros((Row_Num, Max_BPR))
+X_P  = np.zeros((2*Row_Num, Max_BPR))
 X_W  = np.zeros((Row_Num, Max_SPR))
-Y_P  = np.zeros((Row_Num, Max_BPR))
+Y_P  = np.zeros((2*Row_Num, Max_BPR))
 Y_W  = np.zeros((Row_Num, Max_SPR))
 
-for i in range(Row_Num):
-    random.seed(2)
-    X_P[i] = np.linspace(x_offset, x_offset + Row_lenght, Max_BPR)
-    X_W[i] = np.linspace(x_offset, x_offset + Row_lenght, Max_SPR)
-    Y_P[i] = [y(x, CropRow_Slope, i * CropRow_Offset + y_offset) + abs(random.gauss(Pose_Y,Sigma_Plant_dis)) for x in X_P[i]]
-    Y_W[i] = [y(x, CropRow_Slope, i * CropRow_Offset + y_offset) + abs(random.gauss(Pose_Y,Sigma_Weed_dis)) for x in X_W[i]]
-    plt.scatter(X_P[i], Y_P[i], c='g')
-    plt.scatter(X_W[i], Y_W[i], c='r')
+ii= 0
 
+for j in range(Row_Num):
+
+    for i in range(hilera):
+        random.seed(2)
+        X_P[i+ii] = np.linspace(x_offset, x_offset + Row_lenght, Max_BPR)
+        X_W[i] = np.linspace(x_offset, x_offset + Row_lenght, Max_SPR)
+        Y_P[i+ii] = [y(x, CropRow_Slope, i * CropRow_Offset + y_offset)  for x in X_P[i]] #JRF #+ abs(random.gauss(Pose_Y,Sigma_Plant_dis))
+        Y_W[i] = [y(x, CropRow_Slope, i * CropRow_Offset + y_offset) + abs(random.gauss(Pose_Y,Sigma_Weed_dis)) for x in X_W[i]]
+        plt.scatter(X_P[i+ii], Y_P[i+ii], c='g')
+        plt.scatter(X_W[i], Y_W[i], c='r')
+        y_offset = i * CropRow_Offset + y_offset       #JRF   Guardo la posicion Y de la ultima fila de plantas puesta, para poder poner la soguiente fila justo a 1.5 metros
+    
+    ii = ii + 2
+    y_offset = y_offset + 1.5       #JRF
+   
 # print(X_P)
+#plt.scatter(X_P, Y_P, c='g')
 plt.show()
 
 if GENERATE_FILE:

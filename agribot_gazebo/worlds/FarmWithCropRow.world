@@ -91,226 +91,6 @@
 
 
 
-
-		<model name='big_plant_0'>
-			<pose frame=''>4.0 0.04676333472351805 0 0 -0 0</pose>
-			<scale>1 1 1</scale>
-			<link name='link_0'>
-				<pose frame=''>4.0 0.04676333472351805 0.103018 0 -0 0</pose>
-        <velocity>0 0 0 0 0 0</velocity>
-        <acceleration>0 0 0 0 0 0</acceleration>
-        <wrench>0 0 0 0 0 0</wrench>
-      </link>
-    </model>
-
-		<model name='big_plant_1'>
-			<pose frame=''>5.666666666666667 0.013257078161336415 0 0 -0 0</pose>
-			<scale>1 1 1</scale>
-			<link name='link_0'>
-				<pose frame=''>5.666666666666667 0.013257078161336415 0.103018 0 -0 0</pose>
-        <velocity>0 0 0 0 0 0</velocity>
-        <acceleration>0 0 0 0 0 0</acceleration>
-        <wrench>0 0 0 0 0 0</wrench>
-      </link>
-    </model>
-
-		<model name='big_plant_2'>
-			<pose frame=''>7.333333333333334 0.007897192424623261 0 0 -0 0</pose>
-			<scale>1 1 1</scale>
-			<link name='link_0'>
-				<pose frame=''>7.333333333333334 0.007897192424623261 0.103018 0 -0 0</pose>
-        <velocity>0 0 0 0 0 0</velocity>
-        <acceleration>0 0 0 0 0 0</acceleration>
-        <wrench>0 0 0 0 0 0</wrench>
-      </link>
-    </model>
-
-		<model name='big_plant_3'>
-			<pose frame=''>9.0 0.0029304289447876332 0 0 -0 0</pose>
-			<scale>1 1 1</scale>
-			<link name='link_0'>
-				<pose frame=''>9.0 0.0029304289447876332 0.103018 0 -0 0</pose>
-        <velocity>0 0 0 0 0 0</velocity>
-        <acceleration>0 0 0 0 0 0</acceleration>
-        <wrench>0 0 0 0 0 0</wrench>
-      </link>
-    </model>
-
-		<model name='big_plant_4'>
-			<pose frame=''>10.666666666666668 0.016702971593347243 0 0 -0 0</pose>
-			<scale>1 1 1</scale>
-			<link name='link_0'>
-				<pose frame=''>10.666666666666668 0.016702971593347243 0.103018 0 -0 0</pose>
-        <velocity>0 0 0 0 0 0</velocity>
-        <acceleration>0 0 0 0 0 0</acceleration>
-        <wrench>0 0 0 0 0 0</wrench>
-      </link>
-    </model>
-
-		<model name='big_plant_5'>
-			<pose frame=''>12.333333333333334 0.028042195769457105 0 0 -0 0</pose>
-			<scale>1 1 1</scale>
-			<link name='link_0'>
-				<pose frame=''>12.333333333333334 0.028042195769457105 0.103018 0 -0 0</pose>
-        <velocity>0 0 0 0 0 0</velocity>
-        <acceleration>0 0 0 0 0 0</acceleration>
-        <wrench>0 0 0 0 0 0</wrench>
-      </link>
-    </model>
-
-		<model name='big_plant_6'>
-			<pose frame=''>14.0 0.00829555810298068 0 0 -0 0</pose>
-			<scale>1 1 1</scale>
-			<link name='link_0'>
-				<pose frame=''>14.0 0.00829555810298068 0.103018 0 -0 0</pose>
-        <velocity>0 0 0 0 0 0</velocity>
-        <acceleration>0 0 0 0 0 0</acceleration>
-        <wrench>0 0 0 0 0 0</wrench>
-      </link>
-    </model>
-
-		<model name='big_plant_7'>
-			<pose frame=''>15.666666666666668 0.015029203054255638 0 0 -0 0</pose>
-			<scale>1 1 1</scale>
-			<link name='link_0'>
-				<pose frame=''>15.666666666666668 0.015029203054255638 0.103018 0 -0 0</pose>
-        <velocity>0 0 0 0 0 0</velocity>
-        <acceleration>0 0 0 0 0 0</acceleration>
-        <wrench>0 0 0 0 0 0</wrench>
-      </link>
-    </model>
-
-		<model name='big_plant_8'>
-			<pose frame=''>17.333333333333336 0.02149265485762445 0 0 -0 0</pose>
-			<scale>1 1 1</scale>
-			<link name='link_0'>
-				<pose frame=''>17.333333333333336 0.02149265485762445 0.103018 0 -0 0</pose>
-        <velocity>0 0 0 0 0 0</velocity>
-        <acceleration>0 0 0 0 0 0</acceleration>
-        <wrench>0 0 0 0 0 0</wrench>
-      </link>
-    </model>
-
-		<model name='big_plant_9'>
-			<pose frame=''>19.0 0.016876576281667638 0 0 -0 0</pose>
-			<scale>1 1 1</scale>
-			<link name='link_0'>
-				<pose frame=''>19.0 0.016876576281667638 0.103018 0 -0 0</pose>
-        <velocity>0 0 0 0 0 0</velocity>
-        <acceleration>0 0 0 0 0 0</acceleration>
-        <wrench>0 0 0 0 0 0</wrench>
-      </link>
-    </model>
-
-		<model name='big_plant_10'>
-			<pose frame=''>4.0 0.8467633347235181 0 0 -0 0</pose>
-			<scale>1 1 1</scale>
-			<link name='link_0'>
-				<pose frame=''>4.0 0.8467633347235181 0.103018 0 -0 0</pose>
-        <velocity>0 0 0 0 0 0</velocity>
-        <acceleration>0 0 0 0 0 0</acceleration>
-        <wrench>0 0 0 0 0 0</wrench>
-      </link>
-    </model>
-
-		<model name='big_plant_11'>
-			<pose frame=''>5.666666666666667 0.8132570781613364 0 0 -0 0</pose>
-			<scale>1 1 1</scale>
-			<link name='link_0'>
-				<pose frame=''>5.666666666666667 0.8132570781613364 0.103018 0 -0 0</pose>
-        <velocity>0 0 0 0 0 0</velocity>
-        <acceleration>0 0 0 0 0 0</acceleration>
-        <wrench>0 0 0 0 0 0</wrench>
-      </link>
-    </model>
-
-		<model name='big_plant_12'>
-			<pose frame=''>7.333333333333334 0.8078971924246233 0 0 -0 0</pose>
-			<scale>1 1 1</scale>
-			<link name='link_0'>
-				<pose frame=''>7.333333333333334 0.8078971924246233 0.103018 0 -0 0</pose>
-        <velocity>0 0 0 0 0 0</velocity>
-        <acceleration>0 0 0 0 0 0</acceleration>
-        <wrench>0 0 0 0 0 0</wrench>
-      </link>
-    </model>
-
-		<model name='big_plant_13'>
-			<pose frame=''>9.0 0.8029304289447877 0 0 -0 0</pose>
-			<scale>1 1 1</scale>
-			<link name='link_0'>
-				<pose frame=''>9.0 0.8029304289447877 0.103018 0 -0 0</pose>
-        <velocity>0 0 0 0 0 0</velocity>
-        <acceleration>0 0 0 0 0 0</acceleration>
-        <wrench>0 0 0 0 0 0</wrench>
-      </link>
-    </model>
-
-		<model name='big_plant_14'>
-			<pose frame=''>10.666666666666668 0.8167029715933473 0 0 -0 0</pose>
-			<scale>1 1 1</scale>
-			<link name='link_0'>
-				<pose frame=''>10.666666666666668 0.8167029715933473 0.103018 0 -0 0</pose>
-        <velocity>0 0 0 0 0 0</velocity>
-        <acceleration>0 0 0 0 0 0</acceleration>
-        <wrench>0 0 0 0 0 0</wrench>
-      </link>
-    </model>
-
-		<model name='big_plant_15'>
-			<pose frame=''>12.333333333333334 0.8280421957694571 0 0 -0 0</pose>
-			<scale>1 1 1</scale>
-			<link name='link_0'>
-				<pose frame=''>12.333333333333334 0.8280421957694571 0.103018 0 -0 0</pose>
-        <velocity>0 0 0 0 0 0</velocity>
-        <acceleration>0 0 0 0 0 0</acceleration>
-        <wrench>0 0 0 0 0 0</wrench>
-      </link>
-    </model>
-
-		<model name='big_plant_16'>
-			<pose frame=''>14.0 0.8082955581029807 0 0 -0 0</pose>
-			<scale>1 1 1</scale>
-			<link name='link_0'>
-				<pose frame=''>14.0 0.8082955581029807 0.103018 0 -0 0</pose>
-        <velocity>0 0 0 0 0 0</velocity>
-        <acceleration>0 0 0 0 0 0</acceleration>
-        <wrench>0 0 0 0 0 0</wrench>
-      </link>
-    </model>
-
-		<model name='big_plant_17'>
-			<pose frame=''>15.666666666666668 0.8150292030542556 0 0 -0 0</pose>
-			<scale>1 1 1</scale>
-			<link name='link_0'>
-				<pose frame=''>15.666666666666668 0.8150292030542556 0.103018 0 -0 0</pose>
-        <velocity>0 0 0 0 0 0</velocity>
-        <acceleration>0 0 0 0 0 0</acceleration>
-        <wrench>0 0 0 0 0 0</wrench>
-      </link>
-    </model>
-
-		<model name='big_plant_18'>
-			<pose frame=''>17.333333333333336 0.8214926548576245 0 0 -0 0</pose>
-			<scale>1 1 1</scale>
-			<link name='link_0'>
-				<pose frame=''>17.333333333333336 0.8214926548576245 0.103018 0 -0 0</pose>
-        <velocity>0 0 0 0 0 0</velocity>
-        <acceleration>0 0 0 0 0 0</acceleration>
-        <wrench>0 0 0 0 0 0</wrench>
-      </link>
-    </model>
-
-		<model name='big_plant_19'>
-			<pose frame=''>19.0 0.8168765762816677 0 0 -0 0</pose>
-			<scale>1 1 1</scale>
-			<link name='link_0'>
-				<pose frame=''>19.0 0.8168765762816677 0.103018 0 -0 0</pose>
-        <velocity>0 0 0 0 0 0</velocity>
-        <acceleration>0 0 0 0 0 0</acceleration>
-        <wrench>0 0 0 0 0 0</wrench>
-      </link>
-    </model>
     <model name='mud_box'>
       <static>1</static>
       <link name='link'>
@@ -688,17 +468,367 @@
       <real_time>112 236889786</real_time>
       <wall_time>1555192438 111534923</wall_time>
       <iterations>112023</iterations>
-     
-      <model name='big_plant_clone_22'>
-        <pose frame=''>10 -0.155578 0 0 -0 0</pose>
-        <scale>1 1 1</scale>
-        <link name='big_plant_22::link_0'>
-          <pose frame=''>10 -0.155578 0.111949 0 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
+
+			<model name='big_plant_0'>
+				<pose frame=''>0.0 0.0 0 0 -0 0</pose>
+				<scale>1 1 1</scale>
+				<link name='link_0'>
+					<pose frame=''>0.0 0.0 0.103018 0 -0 0</pose>
+          <velocity>0 0 0 0 0 0</velocity>
+          <acceleration>0 0 0 0 0 0</acceleration>
+          <wrench>0 0 0 0 0 0</wrench>
         </link>
       </model>
+
+
+			<model name='big_plant_1'>
+				<pose frame=''>1.25 0.0 0 0 -0 0</pose>
+				<scale>1 1 1</scale>
+				<link name='link_0'>
+					<pose frame=''>1.25 0.0 0.103018 0 -0 0</pose>
+          <velocity>0 0 0 0 0 0</velocity>
+          <acceleration>0 0 0 0 0 0</acceleration>
+          <wrench>0 0 0 0 0 0</wrench>
+        </link>
+      </model>
+
+
+			<model name='big_plant_2'>
+				<pose frame=''>2.5 0.0 0 0 -0 0</pose>
+				<scale>1 1 1</scale>
+				<link name='link_0'>
+					<pose frame=''>2.5 0.0 0.103018 0 -0 0</pose>
+          <velocity>0 0 0 0 0 0</velocity>
+          <acceleration>0 0 0 0 0 0</acceleration>
+          <wrench>0 0 0 0 0 0</wrench>
+        </link>
+      </model>
+
+
+			<model name='big_plant_3'>
+				<pose frame=''>3.75 0.0 0 0 -0 0</pose>
+				<scale>1 1 1</scale>
+				<link name='link_0'>
+					<pose frame=''>3.75 0.0 0.103018 0 -0 0</pose>
+          <velocity>0 0 0 0 0 0</velocity>
+          <acceleration>0 0 0 0 0 0</acceleration>
+          <wrench>0 0 0 0 0 0</wrench>
+        </link>
+      </model>
+
+
+			<model name='big_plant_4'>
+				<pose frame=''>5.0 0.0 0 0 -0 0</pose>
+				<scale>1 1 1</scale>
+				<link name='link_0'>
+					<pose frame=''>5.0 0.0 0.103018 0 -0 0</pose>
+          <velocity>0 0 0 0 0 0</velocity>
+          <acceleration>0 0 0 0 0 0</acceleration>
+          <wrench>0 0 0 0 0 0</wrench>
+        </link>
+      </model>
+
+
+			<model name='big_plant_5'>
+				<pose frame=''>0.0 0.1 0 0 -0 0</pose>
+				<scale>1 1 1</scale>
+				<link name='link_0'>
+					<pose frame=''>0.0 0.1 0.103018 0 -0 0</pose>
+          <velocity>0 0 0 0 0 0</velocity>
+          <acceleration>0 0 0 0 0 0</acceleration>
+          <wrench>0 0 0 0 0 0</wrench>
+        </link>
+      </model>
+
+
+			<model name='big_plant_6'>
+				<pose frame=''>1.25 0.1 0 0 -0 0</pose>
+				<scale>1 1 1</scale>
+				<link name='link_0'>
+					<pose frame=''>1.25 0.1 0.103018 0 -0 0</pose>
+          <velocity>0 0 0 0 0 0</velocity>
+          <acceleration>0 0 0 0 0 0</acceleration>
+          <wrench>0 0 0 0 0 0</wrench>
+        </link>
+      </model>
+
+
+			<model name='big_plant_7'>
+				<pose frame=''>2.5 0.1 0 0 -0 0</pose>
+				<scale>1 1 1</scale>
+				<link name='link_0'>
+					<pose frame=''>2.5 0.1 0.103018 0 -0 0</pose>
+          <velocity>0 0 0 0 0 0</velocity>
+          <acceleration>0 0 0 0 0 0</acceleration>
+          <wrench>0 0 0 0 0 0</wrench>
+        </link>
+      </model>
+
+
+			<model name='big_plant_8'>
+				<pose frame=''>3.75 0.1 0 0 -0 0</pose>
+				<scale>1 1 1</scale>
+				<link name='link_0'>
+					<pose frame=''>3.75 0.1 0.103018 0 -0 0</pose>
+          <velocity>0 0 0 0 0 0</velocity>
+          <acceleration>0 0 0 0 0 0</acceleration>
+          <wrench>0 0 0 0 0 0</wrench>
+        </link>
+      </model>
+
+
+			<model name='big_plant_9'>
+				<pose frame=''>5.0 0.1 0 0 -0 0</pose>
+				<scale>1 1 1</scale>
+				<link name='link_0'>
+					<pose frame=''>5.0 0.1 0.103018 0 -0 0</pose>
+          <velocity>0 0 0 0 0 0</velocity>
+          <acceleration>0 0 0 0 0 0</acceleration>
+          <wrench>0 0 0 0 0 0</wrench>
+        </link>
+      </model>
+
+
+			<model name='big_plant_10'>
+				<pose frame=''>0.0 1.6 0 0 -0 0</pose>
+				<scale>1 1 1</scale>
+				<link name='link_0'>
+					<pose frame=''>0.0 1.6 0.103018 0 -0 0</pose>
+          <velocity>0 0 0 0 0 0</velocity>
+          <acceleration>0 0 0 0 0 0</acceleration>
+          <wrench>0 0 0 0 0 0</wrench>
+        </link>
+      </model>
+
+
+			<model name='big_plant_11'>
+				<pose frame=''>1.25 1.6 0 0 -0 0</pose>
+				<scale>1 1 1</scale>
+				<link name='link_0'>
+					<pose frame=''>1.25 1.6 0.103018 0 -0 0</pose>
+          <velocity>0 0 0 0 0 0</velocity>
+          <acceleration>0 0 0 0 0 0</acceleration>
+          <wrench>0 0 0 0 0 0</wrench>
+        </link>
+      </model>
+
+
+			<model name='big_plant_12'>
+				<pose frame=''>2.5 1.6 0 0 -0 0</pose>
+				<scale>1 1 1</scale>
+				<link name='link_0'>
+					<pose frame=''>2.5 1.6 0.103018 0 -0 0</pose>
+          <velocity>0 0 0 0 0 0</velocity>
+          <acceleration>0 0 0 0 0 0</acceleration>
+          <wrench>0 0 0 0 0 0</wrench>
+        </link>
+      </model>
+
+
+			<model name='big_plant_13'>
+				<pose frame=''>3.75 1.6 0 0 -0 0</pose>
+				<scale>1 1 1</scale>
+				<link name='link_0'>
+					<pose frame=''>3.75 1.6 0.103018 0 -0 0</pose>
+          <velocity>0 0 0 0 0 0</velocity>
+          <acceleration>0 0 0 0 0 0</acceleration>
+          <wrench>0 0 0 0 0 0</wrench>
+        </link>
+      </model>
+
+
+			<model name='big_plant_14'>
+				<pose frame=''>5.0 1.6 0 0 -0 0</pose>
+				<scale>1 1 1</scale>
+				<link name='link_0'>
+					<pose frame=''>5.0 1.6 0.103018 0 -0 0</pose>
+          <velocity>0 0 0 0 0 0</velocity>
+          <acceleration>0 0 0 0 0 0</acceleration>
+          <wrench>0 0 0 0 0 0</wrench>
+        </link>
+      </model>
+
+
+			<model name='big_plant_15'>
+				<pose frame=''>0.0 1.7000000000000002 0 0 -0 0</pose>
+				<scale>1 1 1</scale>
+				<link name='link_0'>
+					<pose frame=''>0.0 1.7000000000000002 0.103018 0 -0 0</pose>
+          <velocity>0 0 0 0 0 0</velocity>
+          <acceleration>0 0 0 0 0 0</acceleration>
+          <wrench>0 0 0 0 0 0</wrench>
+        </link>
+      </model>
+
+
+			<model name='big_plant_16'>
+				<pose frame=''>1.25 1.7000000000000002 0 0 -0 0</pose>
+				<scale>1 1 1</scale>
+				<link name='link_0'>
+					<pose frame=''>1.25 1.7000000000000002 0.103018 0 -0 0</pose>
+          <velocity>0 0 0 0 0 0</velocity>
+          <acceleration>0 0 0 0 0 0</acceleration>
+          <wrench>0 0 0 0 0 0</wrench>
+        </link>
+      </model>
+
+
+			<model name='big_plant_17'>
+				<pose frame=''>2.5 1.7000000000000002 0 0 -0 0</pose>
+				<scale>1 1 1</scale>
+				<link name='link_0'>
+					<pose frame=''>2.5 1.7000000000000002 0.103018 0 -0 0</pose>
+          <velocity>0 0 0 0 0 0</velocity>
+          <acceleration>0 0 0 0 0 0</acceleration>
+          <wrench>0 0 0 0 0 0</wrench>
+        </link>
+      </model>
+
+
+			<model name='big_plant_18'>
+				<pose frame=''>3.75 1.7000000000000002 0 0 -0 0</pose>
+				<scale>1 1 1</scale>
+				<link name='link_0'>
+					<pose frame=''>3.75 1.7000000000000002 0.103018 0 -0 0</pose>
+          <velocity>0 0 0 0 0 0</velocity>
+          <acceleration>0 0 0 0 0 0</acceleration>
+          <wrench>0 0 0 0 0 0</wrench>
+        </link>
+      </model>
+
+
+			<model name='big_plant_19'>
+				<pose frame=''>5.0 1.7000000000000002 0 0 -0 0</pose>
+				<scale>1 1 1</scale>
+				<link name='link_0'>
+					<pose frame=''>5.0 1.7000000000000002 0.103018 0 -0 0</pose>
+          <velocity>0 0 0 0 0 0</velocity>
+          <acceleration>0 0 0 0 0 0</acceleration>
+          <wrench>0 0 0 0 0 0</wrench>
+        </link>
+      </model>
+
+
+			<model name='big_plant_20'>
+				<pose frame=''>0.0 3.2 0 0 -0 0</pose>
+				<scale>1 1 1</scale>
+				<link name='link_0'>
+					<pose frame=''>0.0 3.2 0.103018 0 -0 0</pose>
+          <velocity>0 0 0 0 0 0</velocity>
+          <acceleration>0 0 0 0 0 0</acceleration>
+          <wrench>0 0 0 0 0 0</wrench>
+        </link>
+      </model>
+
+
+			<model name='big_plant_21'>
+				<pose frame=''>1.25 3.2 0 0 -0 0</pose>
+				<scale>1 1 1</scale>
+				<link name='link_0'>
+					<pose frame=''>1.25 3.2 0.103018 0 -0 0</pose>
+          <velocity>0 0 0 0 0 0</velocity>
+          <acceleration>0 0 0 0 0 0</acceleration>
+          <wrench>0 0 0 0 0 0</wrench>
+        </link>
+      </model>
+
+
+			<model name='big_plant_22'>
+				<pose frame=''>2.5 3.2 0 0 -0 0</pose>
+				<scale>1 1 1</scale>
+				<link name='link_0'>
+					<pose frame=''>2.5 3.2 0.103018 0 -0 0</pose>
+          <velocity>0 0 0 0 0 0</velocity>
+          <acceleration>0 0 0 0 0 0</acceleration>
+          <wrench>0 0 0 0 0 0</wrench>
+        </link>
+      </model>
+
+
+			<model name='big_plant_23'>
+				<pose frame=''>3.75 3.2 0 0 -0 0</pose>
+				<scale>1 1 1</scale>
+				<link name='link_0'>
+					<pose frame=''>3.75 3.2 0.103018 0 -0 0</pose>
+          <velocity>0 0 0 0 0 0</velocity>
+          <acceleration>0 0 0 0 0 0</acceleration>
+          <wrench>0 0 0 0 0 0</wrench>
+        </link>
+      </model>
+
+
+			<model name='big_plant_24'>
+				<pose frame=''>5.0 3.2 0 0 -0 0</pose>
+				<scale>1 1 1</scale>
+				<link name='link_0'>
+					<pose frame=''>5.0 3.2 0.103018 0 -0 0</pose>
+          <velocity>0 0 0 0 0 0</velocity>
+          <acceleration>0 0 0 0 0 0</acceleration>
+          <wrench>0 0 0 0 0 0</wrench>
+        </link>
+      </model>
+
+
+			<model name='big_plant_25'>
+				<pose frame=''>0.0 3.3000000000000003 0 0 -0 0</pose>
+				<scale>1 1 1</scale>
+				<link name='link_0'>
+					<pose frame=''>0.0 3.3000000000000003 0.103018 0 -0 0</pose>
+          <velocity>0 0 0 0 0 0</velocity>
+          <acceleration>0 0 0 0 0 0</acceleration>
+          <wrench>0 0 0 0 0 0</wrench>
+        </link>
+      </model>
+
+
+			<model name='big_plant_26'>
+				<pose frame=''>1.25 3.3000000000000003 0 0 -0 0</pose>
+				<scale>1 1 1</scale>
+				<link name='link_0'>
+					<pose frame=''>1.25 3.3000000000000003 0.103018 0 -0 0</pose>
+          <velocity>0 0 0 0 0 0</velocity>
+          <acceleration>0 0 0 0 0 0</acceleration>
+          <wrench>0 0 0 0 0 0</wrench>
+        </link>
+      </model>
+
+
+			<model name='big_plant_27'>
+				<pose frame=''>2.5 3.3000000000000003 0 0 -0 0</pose>
+				<scale>1 1 1</scale>
+				<link name='link_0'>
+					<pose frame=''>2.5 3.3000000000000003 0.103018 0 -0 0</pose>
+          <velocity>0 0 0 0 0 0</velocity>
+          <acceleration>0 0 0 0 0 0</acceleration>
+          <wrench>0 0 0 0 0 0</wrench>
+        </link>
+      </model>
+
+
+			<model name='big_plant_28'>
+				<pose frame=''>3.75 3.3000000000000003 0 0 -0 0</pose>
+				<scale>1 1 1</scale>
+				<link name='link_0'>
+					<pose frame=''>3.75 3.3000000000000003 0.103018 0 -0 0</pose>
+          <velocity>0 0 0 0 0 0</velocity>
+          <acceleration>0 0 0 0 0 0</acceleration>
+          <wrench>0 0 0 0 0 0</wrench>
+        </link>
+      </model>
+
+
+			<model name='big_plant_29'>
+				<pose frame=''>5.0 3.3000000000000003 0 0 -0 0</pose>
+				<scale>1 1 1</scale>
+				<link name='link_0'>
+					<pose frame=''>5.0 3.3000000000000003 0.103018 0 -0 0</pose>
+          <velocity>0 0 0 0 0 0</velocity>
+          <acceleration>0 0 0 0 0 0</acceleration>
+          <wrench>0 0 0 0 0 0</wrench>
+        </link>
+      </model>
+
+     
 
       <model name='ground_plane'>
         <pose frame=''>0 0 0 0 -0 0</pose>
@@ -1885,7 +2015,8 @@
 
 
 
-		<model name='big_plant_0'>
+
+			<model name='big_plant_0'>
       <link name='link_0'>
         <pose frame=''>0 0 0.103018 0 -0 0</pose>
         <inertial>
@@ -1932,11 +2063,12 @@
       <static>1</static>
       <allow_auto_disable>1</allow_auto_disable>
 
-			<pose frame=''>4.0 0.04676333472351805 0 0 -0 0</pose>
+			<pose frame=''>0.0 0.0 0 0 -0 0</pose>
 
 		</model>
 
-		<model name='big_plant_1'>
+
+			<model name='big_plant_1'>
       <link name='link_0'>
         <pose frame=''>0 0 0.103018 0 -0 0</pose>
         <inertial>
@@ -1983,11 +2115,12 @@
       <static>1</static>
       <allow_auto_disable>1</allow_auto_disable>
 
-			<pose frame=''>5.666666666666667 0.013257078161336415 0 0 -0 0</pose>
+			<pose frame=''>1.25 0.0 0 0 -0 0</pose>
 
 		</model>
 
-		<model name='big_plant_2'>
+
+			<model name='big_plant_2'>
       <link name='link_0'>
         <pose frame=''>0 0 0.103018 0 -0 0</pose>
         <inertial>
@@ -2034,11 +2167,12 @@
       <static>1</static>
       <allow_auto_disable>1</allow_auto_disable>
 
-			<pose frame=''>7.333333333333334 0.007897192424623261 0 0 -0 0</pose>
+			<pose frame=''>2.5 0.0 0 0 -0 0</pose>
 
 		</model>
 
-		<model name='big_plant_3'>
+
+			<model name='big_plant_3'>
       <link name='link_0'>
         <pose frame=''>0 0 0.103018 0 -0 0</pose>
         <inertial>
@@ -2085,11 +2219,12 @@
       <static>1</static>
       <allow_auto_disable>1</allow_auto_disable>
 
-			<pose frame=''>9.0 0.0029304289447876332 0 0 -0 0</pose>
+			<pose frame=''>3.75 0.0 0 0 -0 0</pose>
 
 		</model>
 
-		<model name='big_plant_4'>
+
+			<model name='big_plant_4'>
       <link name='link_0'>
         <pose frame=''>0 0 0.103018 0 -0 0</pose>
         <inertial>
@@ -2136,11 +2271,12 @@
       <static>1</static>
       <allow_auto_disable>1</allow_auto_disable>
 
-			<pose frame=''>10.666666666666668 0.016702971593347243 0 0 -0 0</pose>
+			<pose frame=''>5.0 0.0 0 0 -0 0</pose>
 
 		</model>
 
-		<model name='big_plant_5'>
+
+			<model name='big_plant_5'>
       <link name='link_0'>
         <pose frame=''>0 0 0.103018 0 -0 0</pose>
         <inertial>
@@ -2187,11 +2323,12 @@
       <static>1</static>
       <allow_auto_disable>1</allow_auto_disable>
 
-			<pose frame=''>12.333333333333334 0.028042195769457105 0 0 -0 0</pose>
+			<pose frame=''>0.0 0.1 0 0 -0 0</pose>
 
 		</model>
 
-		<model name='big_plant_6'>
+
+			<model name='big_plant_6'>
       <link name='link_0'>
         <pose frame=''>0 0 0.103018 0 -0 0</pose>
         <inertial>
@@ -2238,11 +2375,12 @@
       <static>1</static>
       <allow_auto_disable>1</allow_auto_disable>
 
-			<pose frame=''>14.0 0.00829555810298068 0 0 -0 0</pose>
+			<pose frame=''>1.25 0.1 0 0 -0 0</pose>
 
 		</model>
 
-		<model name='big_plant_7'>
+
+			<model name='big_plant_7'>
       <link name='link_0'>
         <pose frame=''>0 0 0.103018 0 -0 0</pose>
         <inertial>
@@ -2289,11 +2427,12 @@
       <static>1</static>
       <allow_auto_disable>1</allow_auto_disable>
 
-			<pose frame=''>15.666666666666668 0.015029203054255638 0 0 -0 0</pose>
+			<pose frame=''>2.5 0.1 0 0 -0 0</pose>
 
 		</model>
 
-		<model name='big_plant_8'>
+
+			<model name='big_plant_8'>
       <link name='link_0'>
         <pose frame=''>0 0 0.103018 0 -0 0</pose>
         <inertial>
@@ -2340,11 +2479,12 @@
       <static>1</static>
       <allow_auto_disable>1</allow_auto_disable>
 
-			<pose frame=''>17.333333333333336 0.02149265485762445 0 0 -0 0</pose>
+			<pose frame=''>3.75 0.1 0 0 -0 0</pose>
 
 		</model>
 
-		<model name='big_plant_9'>
+
+			<model name='big_plant_9'>
       <link name='link_0'>
         <pose frame=''>0 0 0.103018 0 -0 0</pose>
         <inertial>
@@ -2391,11 +2531,12 @@
       <static>1</static>
       <allow_auto_disable>1</allow_auto_disable>
 
-			<pose frame=''>19.0 0.016876576281667638 0 0 -0 0</pose>
+			<pose frame=''>5.0 0.1 0 0 -0 0</pose>
 
 		</model>
 
-		<model name='big_plant_10'>
+
+			<model name='big_plant_10'>
       <link name='link_0'>
         <pose frame=''>0 0 0.103018 0 -0 0</pose>
         <inertial>
@@ -2442,11 +2583,12 @@
       <static>1</static>
       <allow_auto_disable>1</allow_auto_disable>
 
-			<pose frame=''>4.0 0.8467633347235181 0 0 -0 0</pose>
+			<pose frame=''>0.0 1.6 0 0 -0 0</pose>
 
 		</model>
 
-		<model name='big_plant_11'>
+
+			<model name='big_plant_11'>
       <link name='link_0'>
         <pose frame=''>0 0 0.103018 0 -0 0</pose>
         <inertial>
@@ -2493,11 +2635,12 @@
       <static>1</static>
       <allow_auto_disable>1</allow_auto_disable>
 
-			<pose frame=''>5.666666666666667 0.8132570781613364 0 0 -0 0</pose>
+			<pose frame=''>1.25 1.6 0 0 -0 0</pose>
 
 		</model>
 
-		<model name='big_plant_12'>
+
+			<model name='big_plant_12'>
       <link name='link_0'>
         <pose frame=''>0 0 0.103018 0 -0 0</pose>
         <inertial>
@@ -2544,11 +2687,12 @@
       <static>1</static>
       <allow_auto_disable>1</allow_auto_disable>
 
-			<pose frame=''>7.333333333333334 0.8078971924246233 0 0 -0 0</pose>
+			<pose frame=''>2.5 1.6 0 0 -0 0</pose>
 
 		</model>
 
-		<model name='big_plant_13'>
+
+			<model name='big_plant_13'>
       <link name='link_0'>
         <pose frame=''>0 0 0.103018 0 -0 0</pose>
         <inertial>
@@ -2595,11 +2739,12 @@
       <static>1</static>
       <allow_auto_disable>1</allow_auto_disable>
 
-			<pose frame=''>9.0 0.8029304289447877 0 0 -0 0</pose>
+			<pose frame=''>3.75 1.6 0 0 -0 0</pose>
 
 		</model>
 
-		<model name='big_plant_14'>
+
+			<model name='big_plant_14'>
       <link name='link_0'>
         <pose frame=''>0 0 0.103018 0 -0 0</pose>
         <inertial>
@@ -2646,11 +2791,12 @@
       <static>1</static>
       <allow_auto_disable>1</allow_auto_disable>
 
-			<pose frame=''>10.666666666666668 0.8167029715933473 0 0 -0 0</pose>
+			<pose frame=''>5.0 1.6 0 0 -0 0</pose>
 
 		</model>
 
-		<model name='big_plant_15'>
+
+			<model name='big_plant_15'>
       <link name='link_0'>
         <pose frame=''>0 0 0.103018 0 -0 0</pose>
         <inertial>
@@ -2697,11 +2843,12 @@
       <static>1</static>
       <allow_auto_disable>1</allow_auto_disable>
 
-			<pose frame=''>12.333333333333334 0.8280421957694571 0 0 -0 0</pose>
+			<pose frame=''>0.0 1.7000000000000002 0 0 -0 0</pose>
 
 		</model>
 
-		<model name='big_plant_16'>
+
+			<model name='big_plant_16'>
       <link name='link_0'>
         <pose frame=''>0 0 0.103018 0 -0 0</pose>
         <inertial>
@@ -2748,11 +2895,12 @@
       <static>1</static>
       <allow_auto_disable>1</allow_auto_disable>
 
-			<pose frame=''>14.0 0.8082955581029807 0 0 -0 0</pose>
+			<pose frame=''>1.25 1.7000000000000002 0 0 -0 0</pose>
 
 		</model>
 
-		<model name='big_plant_17'>
+
+			<model name='big_plant_17'>
       <link name='link_0'>
         <pose frame=''>0 0 0.103018 0 -0 0</pose>
         <inertial>
@@ -2799,11 +2947,12 @@
       <static>1</static>
       <allow_auto_disable>1</allow_auto_disable>
 
-			<pose frame=''>15.666666666666668 0.8150292030542556 0 0 -0 0</pose>
+			<pose frame=''>2.5 1.7000000000000002 0 0 -0 0</pose>
 
 		</model>
 
-		<model name='big_plant_18'>
+
+			<model name='big_plant_18'>
       <link name='link_0'>
         <pose frame=''>0 0 0.103018 0 -0 0</pose>
         <inertial>
@@ -2850,11 +2999,12 @@
       <static>1</static>
       <allow_auto_disable>1</allow_auto_disable>
 
-			<pose frame=''>17.333333333333336 0.8214926548576245 0 0 -0 0</pose>
+			<pose frame=''>3.75 1.7000000000000002 0 0 -0 0</pose>
 
 		</model>
 
-		<model name='big_plant_19'>
+
+			<model name='big_plant_19'>
       <link name='link_0'>
         <pose frame=''>0 0 0.103018 0 -0 0</pose>
         <inertial>
@@ -2901,7 +3051,527 @@
       <static>1</static>
       <allow_auto_disable>1</allow_auto_disable>
 
-			<pose frame=''>19.0 0.8168765762816677 0 0 -0 0</pose>
+			<pose frame=''>5.0 1.7000000000000002 0 0 -0 0</pose>
+
+		</model>
+
+
+			<model name='big_plant_20'>
+      <link name='link_0'>
+        <pose frame=''>0 0 0.103018 0 -0 0</pose>
+        <inertial>
+          <mass>1e-08</mass>
+          <inertia>
+            <ixx>0.166667</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.166667</iyy>
+            <iyz>0</iyz>
+            <izz>0.166667</izz>
+          </inertia>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+        </inertial>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <visual name='visual'>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://big_plant/mesh/big_plant.stl</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <lighting>1</lighting>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Grey</name>
+            </script>
+            <ambient>0.3 0.3 0.3 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+            <specular>0.01 1 0.01 1</specular>
+            <emissive>0 1 0 1</emissive>
+            <shader type='vertex'>
+              <normal_map>__default__</normal_map>
+            </shader>
+          </material>
+          <cast_shadows>1</cast_shadows>
+          <transparency>0</transparency>
+        </visual>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+      <allow_auto_disable>1</allow_auto_disable>
+
+			<pose frame=''>0.0 3.2 0 0 -0 0</pose>
+
+		</model>
+
+
+			<model name='big_plant_21'>
+      <link name='link_0'>
+        <pose frame=''>0 0 0.103018 0 -0 0</pose>
+        <inertial>
+          <mass>1e-08</mass>
+          <inertia>
+            <ixx>0.166667</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.166667</iyy>
+            <iyz>0</iyz>
+            <izz>0.166667</izz>
+          </inertia>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+        </inertial>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <visual name='visual'>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://big_plant/mesh/big_plant.stl</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <lighting>1</lighting>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Grey</name>
+            </script>
+            <ambient>0.3 0.3 0.3 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+            <specular>0.01 1 0.01 1</specular>
+            <emissive>0 1 0 1</emissive>
+            <shader type='vertex'>
+              <normal_map>__default__</normal_map>
+            </shader>
+          </material>
+          <cast_shadows>1</cast_shadows>
+          <transparency>0</transparency>
+        </visual>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+      <allow_auto_disable>1</allow_auto_disable>
+
+			<pose frame=''>1.25 3.2 0 0 -0 0</pose>
+
+		</model>
+
+
+			<model name='big_plant_22'>
+      <link name='link_0'>
+        <pose frame=''>0 0 0.103018 0 -0 0</pose>
+        <inertial>
+          <mass>1e-08</mass>
+          <inertia>
+            <ixx>0.166667</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.166667</iyy>
+            <iyz>0</iyz>
+            <izz>0.166667</izz>
+          </inertia>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+        </inertial>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <visual name='visual'>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://big_plant/mesh/big_plant.stl</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <lighting>1</lighting>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Grey</name>
+            </script>
+            <ambient>0.3 0.3 0.3 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+            <specular>0.01 1 0.01 1</specular>
+            <emissive>0 1 0 1</emissive>
+            <shader type='vertex'>
+              <normal_map>__default__</normal_map>
+            </shader>
+          </material>
+          <cast_shadows>1</cast_shadows>
+          <transparency>0</transparency>
+        </visual>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+      <allow_auto_disable>1</allow_auto_disable>
+
+			<pose frame=''>2.5 3.2 0 0 -0 0</pose>
+
+		</model>
+
+
+			<model name='big_plant_23'>
+      <link name='link_0'>
+        <pose frame=''>0 0 0.103018 0 -0 0</pose>
+        <inertial>
+          <mass>1e-08</mass>
+          <inertia>
+            <ixx>0.166667</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.166667</iyy>
+            <iyz>0</iyz>
+            <izz>0.166667</izz>
+          </inertia>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+        </inertial>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <visual name='visual'>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://big_plant/mesh/big_plant.stl</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <lighting>1</lighting>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Grey</name>
+            </script>
+            <ambient>0.3 0.3 0.3 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+            <specular>0.01 1 0.01 1</specular>
+            <emissive>0 1 0 1</emissive>
+            <shader type='vertex'>
+              <normal_map>__default__</normal_map>
+            </shader>
+          </material>
+          <cast_shadows>1</cast_shadows>
+          <transparency>0</transparency>
+        </visual>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+      <allow_auto_disable>1</allow_auto_disable>
+
+			<pose frame=''>3.75 3.2 0 0 -0 0</pose>
+
+		</model>
+
+
+			<model name='big_plant_24'>
+      <link name='link_0'>
+        <pose frame=''>0 0 0.103018 0 -0 0</pose>
+        <inertial>
+          <mass>1e-08</mass>
+          <inertia>
+            <ixx>0.166667</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.166667</iyy>
+            <iyz>0</iyz>
+            <izz>0.166667</izz>
+          </inertia>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+        </inertial>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <visual name='visual'>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://big_plant/mesh/big_plant.stl</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <lighting>1</lighting>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Grey</name>
+            </script>
+            <ambient>0.3 0.3 0.3 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+            <specular>0.01 1 0.01 1</specular>
+            <emissive>0 1 0 1</emissive>
+            <shader type='vertex'>
+              <normal_map>__default__</normal_map>
+            </shader>
+          </material>
+          <cast_shadows>1</cast_shadows>
+          <transparency>0</transparency>
+        </visual>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+      <allow_auto_disable>1</allow_auto_disable>
+
+			<pose frame=''>5.0 3.2 0 0 -0 0</pose>
+
+		</model>
+
+
+			<model name='big_plant_25'>
+      <link name='link_0'>
+        <pose frame=''>0 0 0.103018 0 -0 0</pose>
+        <inertial>
+          <mass>1e-08</mass>
+          <inertia>
+            <ixx>0.166667</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.166667</iyy>
+            <iyz>0</iyz>
+            <izz>0.166667</izz>
+          </inertia>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+        </inertial>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <visual name='visual'>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://big_plant/mesh/big_plant.stl</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <lighting>1</lighting>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Grey</name>
+            </script>
+            <ambient>0.3 0.3 0.3 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+            <specular>0.01 1 0.01 1</specular>
+            <emissive>0 1 0 1</emissive>
+            <shader type='vertex'>
+              <normal_map>__default__</normal_map>
+            </shader>
+          </material>
+          <cast_shadows>1</cast_shadows>
+          <transparency>0</transparency>
+        </visual>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+      <allow_auto_disable>1</allow_auto_disable>
+
+			<pose frame=''>0.0 3.3000000000000003 0 0 -0 0</pose>
+
+		</model>
+
+
+			<model name='big_plant_26'>
+      <link name='link_0'>
+        <pose frame=''>0 0 0.103018 0 -0 0</pose>
+        <inertial>
+          <mass>1e-08</mass>
+          <inertia>
+            <ixx>0.166667</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.166667</iyy>
+            <iyz>0</iyz>
+            <izz>0.166667</izz>
+          </inertia>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+        </inertial>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <visual name='visual'>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://big_plant/mesh/big_plant.stl</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <lighting>1</lighting>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Grey</name>
+            </script>
+            <ambient>0.3 0.3 0.3 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+            <specular>0.01 1 0.01 1</specular>
+            <emissive>0 1 0 1</emissive>
+            <shader type='vertex'>
+              <normal_map>__default__</normal_map>
+            </shader>
+          </material>
+          <cast_shadows>1</cast_shadows>
+          <transparency>0</transparency>
+        </visual>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+      <allow_auto_disable>1</allow_auto_disable>
+
+			<pose frame=''>1.25 3.3000000000000003 0 0 -0 0</pose>
+
+		</model>
+
+
+			<model name='big_plant_27'>
+      <link name='link_0'>
+        <pose frame=''>0 0 0.103018 0 -0 0</pose>
+        <inertial>
+          <mass>1e-08</mass>
+          <inertia>
+            <ixx>0.166667</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.166667</iyy>
+            <iyz>0</iyz>
+            <izz>0.166667</izz>
+          </inertia>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+        </inertial>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <visual name='visual'>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://big_plant/mesh/big_plant.stl</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <lighting>1</lighting>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Grey</name>
+            </script>
+            <ambient>0.3 0.3 0.3 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+            <specular>0.01 1 0.01 1</specular>
+            <emissive>0 1 0 1</emissive>
+            <shader type='vertex'>
+              <normal_map>__default__</normal_map>
+            </shader>
+          </material>
+          <cast_shadows>1</cast_shadows>
+          <transparency>0</transparency>
+        </visual>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+      <allow_auto_disable>1</allow_auto_disable>
+
+			<pose frame=''>2.5 3.3000000000000003 0 0 -0 0</pose>
+
+		</model>
+
+
+			<model name='big_plant_28'>
+      <link name='link_0'>
+        <pose frame=''>0 0 0.103018 0 -0 0</pose>
+        <inertial>
+          <mass>1e-08</mass>
+          <inertia>
+            <ixx>0.166667</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.166667</iyy>
+            <iyz>0</iyz>
+            <izz>0.166667</izz>
+          </inertia>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+        </inertial>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <visual name='visual'>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://big_plant/mesh/big_plant.stl</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <lighting>1</lighting>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Grey</name>
+            </script>
+            <ambient>0.3 0.3 0.3 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+            <specular>0.01 1 0.01 1</specular>
+            <emissive>0 1 0 1</emissive>
+            <shader type='vertex'>
+              <normal_map>__default__</normal_map>
+            </shader>
+          </material>
+          <cast_shadows>1</cast_shadows>
+          <transparency>0</transparency>
+        </visual>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+      <allow_auto_disable>1</allow_auto_disable>
+
+			<pose frame=''>3.75 3.3000000000000003 0 0 -0 0</pose>
+
+		</model>
+
+
+			<model name='big_plant_29'>
+      <link name='link_0'>
+        <pose frame=''>0 0 0.103018 0 -0 0</pose>
+        <inertial>
+          <mass>1e-08</mass>
+          <inertia>
+            <ixx>0.166667</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.166667</iyy>
+            <iyz>0</iyz>
+            <izz>0.166667</izz>
+          </inertia>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+        </inertial>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <visual name='visual'>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://big_plant/mesh/big_plant.stl</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <lighting>1</lighting>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Grey</name>
+            </script>
+            <ambient>0.3 0.3 0.3 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+            <specular>0.01 1 0.01 1</specular>
+            <emissive>0 1 0 1</emissive>
+            <shader type='vertex'>
+              <normal_map>__default__</normal_map>
+            </shader>
+          </material>
+          <cast_shadows>1</cast_shadows>
+          <transparency>0</transparency>
+        </visual>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+      <allow_auto_disable>1</allow_auto_disable>
+
+			<pose frame=''>5.0 3.3000000000000003 0 0 -0 0</pose>
 
 		</model>
 

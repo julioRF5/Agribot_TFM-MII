@@ -8,11 +8,11 @@ GENERATE_FILE = True
 def y(x, m, b):
     return m*x + b
 
-Row_Num = 3
+Row_Num = 6
 hilera = 2 #Numero de plantas en paralelo por cada hilera
-Max_BPR = 5 # maximum Big plants in each row
+Max_BPR = 40 # maximum Big plants in each row
 Max_SPR = 0 # maximum Small plant in each row
-Row_lenght = 5 # in meters
+Row_lenght = 25 # in meters
 Random_noise_magnitude = 1 # maximum random noise magitude in meters
 
 SP_H = 0.110674
@@ -31,8 +31,8 @@ Sigma_Weed_dis = 0.005
 CropRow_Slope = 0  #pendiente de las hileras
 CropRow_Offset = 0.1  # Separacion entre fila de una misma hilera
 
-x_offset = 0.0
-y_offset = 0.0
+x_offset = -10.0
+y_offset = -5.0
 
 X_P  = np.zeros((2*Row_Num, Max_BPR))
 X_W  = np.zeros((Row_Num, Max_SPR))

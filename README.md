@@ -72,9 +72,6 @@ if you use this project in your recent works please reference to our paper by:
 ```
 ---
 
-## Maintenance
-This repository is maintained by [Alireza Ahmadi](https://github.com/alirezaahmadi). In case of any problems, please don't hesitate to contact me.
 
- Alireza.Ahmadi@uni-bonn.de   
 
        

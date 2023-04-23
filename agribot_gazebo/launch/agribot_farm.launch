@@ -21,7 +21,7 @@
 
   <param name="robot_description" command="$(find xacro)/xacro.py '$(find agribot_control)/urdf/agribot.xacro'"/>
   <node name="agribot_spawn" pkg="gazebo_ros" type="spawn_model" output="screen" respawn="false"
-   args="-x -6.0 -y 0 -z 1.13 -Y 0   -urdf -param robot_description -model agribot">                            <!-- posicion del robot-->
+   args="-x -14.0 -y 0 -z 1.13 -Y 0   -urdf -param robot_description -model agribot">                            <!-- posicion del robot-->
   </node> 
 
   <!-- comentado a partir de aqui-->

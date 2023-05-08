@@ -11,7 +11,7 @@ class AgriBot:
     def __init__(self):
         # Creates a node with name 'turtlebot_controller' and make sure it is a
         # unique node (using anonymous=True).
-        rospy.init_node('agribot_controller', anonymous=True)
+        rospy.init_node('agribot_controller', anonymous=False)
 
         # Publisher which will publish to the topic '/turtle1/cmd_vel'.
         self.velocity_publisher = rospy.Publisher('/cmd_vel',

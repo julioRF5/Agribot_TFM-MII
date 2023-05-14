@@ -1,12 +1,22 @@
+# -*- coding: utf-8 -*-
 import matplotlib.pyplot as plt
 import math
 import numpy as np
 import random
 
-GENERATE_FILE = True
+GENERATE_FILE = False
+RECORD_WAYPOINTS = True
+
+waypoints_path = "/home/juliorf/catkin_ws/src/julio_tfm/agribot-master/ROS_Waypoints_Processor/waypoints_files/waypoints.txt"
 
 def y(x, m, b):
     return m*x + b
+
+def record_waypoints(file_path, x, y, z, Ox, Oy, Oz, Ow):
+    file = open(file_path, "a+")
+    file.write("{},{},{},{},{},{},{}\n".format(x, y, z, Ox, Oy, Oz, Ow))
+    file.close()
+
 
 Row_Num = 6
 hilera = 2 #Numero de plantas en paralelo por cada hilera
@@ -14,6 +24,7 @@ Max_BPR = 40 # maximum Big plants in each row
 Max_SPR = 0 # maximum Small plant in each row
 Row_lenght = 25 # in meters
 Random_noise_magnitude = 1 # maximum random noise magitude in meters
+
 
 SP_H = 0.110674
 BP_H = 0.103018
@@ -52,12 +63,37 @@ for j in range(Row_Num):
         plt.scatter(X_P[i+ii], Y_P[i+ii], c='g')
         # plt.scatter(X_W[i], Y_W[i], c='r')
         y_offset = i * CropRow_Offset + y_offset       #JRF   Guardo la posicion Y de la ultima fila de plantas puesta, para poder poner la soguiente fila justo a 1.5 metros
-    
+
     ii = ii + 2
     y_offset = y_offset + 1.5       #JRF
-   
-# print(X_P)
+
 plt.show()
+
+reverse = False #recorrer hilera del reves
+
+if RECORD_WAYPOINTS:
+    with open(waypoints_path, "w") as archivo:
+        archivo.write("")  #Escribe cadena vacia para borrar el contenido del fichero de texto.
+        record_waypoints(waypoints_path, X_P[0][0]-5, Y_P[0][0], 0,0,0,0,0)
+    for i in range(2*Row_Num):
+        for x in range(Max_BPR):
+            if i%2 == 0:  #En cada hilera hay a su vez dos hileras más. Solo guardamos la posicion de una de las hileras
+                if reverse == False:
+                    record_waypoints(waypoints_path, X_P[i][x], Y_P[i][x], 0,0,0,0,0)
+                    
+                else:
+                    record_waypoints(waypoints_path, X_P[i][(Max_BPR-1)-x], Y_P[i][x], 0,0,0,0,0)
+                    
+        if i%2 == 0:
+            if reverse:
+                record_waypoints(waypoints_path, X_P[i][Max_BPR-1]-5, Y_P[i][x], 0,0,+1.57,0,0)
+                record_waypoints(waypoints_path, X_P[i][Max_BPR-1]-5, Y_P[i][x]+1.5, 0,0,0,0,0)
+                reverse = False
+            else:
+                record_waypoints(waypoints_path, X_P[i][Max_BPR-1]+5, Y_P[i][x], 0,0,+1.57,0,0)
+                record_waypoints(waypoints_path, X_P[i][Max_BPR-1]+5, Y_P[i][x]+1.5, 0,0,+3.14,0,0)
+                reverse = True
+            
 
 if GENERATE_FILE:
     # Output files
@@ -87,6 +123,7 @@ if GENERATE_FILE:
     scale = "\t\t\t\t<scale>1 1 1</scale>\n"
     BP_link_name = "\t\t\t\t<link name='link_0'>\n"
     SP_link_name = "\t\t\t<link name='link_0'>\n"
+
 
     # Big plants
     for i in range(2*Row_Num):

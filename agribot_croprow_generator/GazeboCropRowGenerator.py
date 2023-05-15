@@ -12,10 +12,47 @@ waypoints_path = "/home/juliorf/catkin_ws/src/julio_tfm/agribot-master/ROS_Waypo
 def y(x, m, b):
     return m*x + b
 
-def record_waypoints(file_path, x, y, z, Ox, Oy, Oz, Ow):
+def record_waypoints(file_path, pos_list):
     file = open(file_path, "a+")
-    file.write("{},{},{},{},{},{},{}\n".format(x, y, z, Ox, Oy, Oz, Ow))
+    file.write("{},{},{},{},{},{},{}\n".format(pos_list[0], pos_list[1], pos_list[2], pos_list[3], pos_list[4], pos_list[5], pos_list[6])) # x, y, z, Ox, Oy, Oz, Ow
     file.close()
+
+def waypoints2semicircle(punto_inicio, punto_fin):
+    # Calcular la distancia entre los dos puntos
+    distancia = math.sqrt((punto_fin[0] - punto_inicio[0]) ** 2 + (punto_fin[1] - punto_inicio[1]) ** 2)
+
+    # Calcular el radio de la semicircunferencia
+    radio = distancia / 2
+
+    # Calcular el centro de la semicircunferencia
+    centro_x = (punto_inicio[0] + punto_fin[0]) / 2
+    centro_y = (punto_inicio[1] + punto_fin[1]) / 2
+
+    # Verificar si los puntos están en línea recta vertical u horizontal
+    if punto_inicio[0] == punto_fin[0]:  # Línea vertical
+        # Calcular el ángulo de inicio y fin de la semicircunferencia
+        angulo_inicio = -math.pi / 2
+        angulo_fin = math.pi / 2
+    elif punto_inicio[1] == punto_fin[1]:  # Línea horizontal
+        # Calcular el ángulo de inicio y fin de la semicircunferencia
+        angulo_inicio = math.pi
+        angulo_fin = 0
+    else:
+        raise ValueError("Los puntos no están en línea recta horizontal o vertical.")
+
+    # Calcular la cantidad de waypoints necesarios
+    cantidad_waypoints = int(abs(angulo_fin - angulo_inicio) * radio) + 1
+
+    # Calcular los waypoints en la semicircunferencia
+    waypoints = []
+    angulo_actual = angulo_inicio
+    for _ in range(cantidad_waypoints):
+        x = centro_x + radio * math.cos(angulo_actual)
+        y = centro_y + radio * math.sin(angulo_actual)
+        waypoints.append((x, y, 0, 0, 0, 0, 0))     # x, y, z, Ox, Oy, Oz, Ow
+        angulo_actual += (angulo_fin - angulo_inicio) / (cantidad_waypoints - 1)
+
+    return waypoints
 
 
 Row_Num = 6
@@ -74,24 +111,40 @@ reverse = False #recorrer hilera del reves
 if RECORD_WAYPOINTS:
     with open(waypoints_path, "w") as archivo:
         archivo.write("")  #Escribe cadena vacia para borrar el contenido del fichero de texto.
-        record_waypoints(waypoints_path, X_P[0][0]-5, Y_P[0][0], 0,0,0,0,0)
+        pos_inicial = [X_P[0][0]-5, Y_P[0][0], 0,0,0,0,0]
+        record_waypoints(waypoints_path, pos_inicial) #Primera posicion de aproximación
+        
     for i in range(2*Row_Num):
         for x in range(Max_BPR):
-            if i%2 == 0:  #En cada hilera hay a su vez dos hileras más. Solo guardamos la posicion de una de las hileras
+            if i%2 == 0:  #En cada hilera hay a su vez dos hileras más. Solo guardamos la posicion de todos los borocolis de una de las hileras
                 if reverse == False:
-                    record_waypoints(waypoints_path, X_P[i][x], Y_P[i][x], 0,0,0,0,0)
+                    pos_stright = [X_P[i][x], Y_P[i][x], 0,0,0,0,0]
+                    record_waypoints(waypoints_path, pos_stright)
                     
                 else:
-                    record_waypoints(waypoints_path, X_P[i][(Max_BPR-1)-x], Y_P[i][x], 0,0,0,0,0)
+                    pos_reverse = [X_P[i][(Max_BPR-1)-x], Y_P[i][x], 0,0,0,0,0]
+                    record_waypoints(waypoints_path, pos_reverse)
                     
-        if i%2 == 0:
+        if i%2 == 0:  #Guardamos posiciones de seguridad y posiciones para realizar la semicircunferencia
             if reverse:
-                record_waypoints(waypoints_path, X_P[i][Max_BPR-1]-5, Y_P[i][x], 0,0,+1.57,0,0)
-                record_waypoints(waypoints_path, X_P[i][Max_BPR-1]-5, Y_P[i][x]+1.5, 0,0,0,0,0)
+                safe_pos_list_rev = [X_P[i][Max_BPR-1]-5, Y_P[i][x], 0,0,+1.57,0,0]
+                record_waypoints(waypoints_path, safe_pos_list_rev)
+                #position_list = [X_P[i][Max_BPR-1]-5, Y_P[i][x]+1.5, 0,0,0,0,0]
+                #record_waypoints(waypoints_path, position_list)
+                pto_inicio_rev = (X_P[i][Max_BPR-1]-5, Y_P[i][x])
+                pto_fin_rev = (X_P[i][Max_BPR-1]-5, Y_P[i][x] + 1.5)
+                wp = waypoints2semicircle(pto_inicio_rev, pto_fin_rev)
+
+                for waypoint in wp:
+                        print(waypoint)
+
+                record_waypoints(waypoints_path, wp)
                 reverse = False
             else:
-                record_waypoints(waypoints_path, X_P[i][Max_BPR-1]+5, Y_P[i][x], 0,0,+1.57,0,0)
-                record_waypoints(waypoints_path, X_P[i][Max_BPR-1]+5, Y_P[i][x]+1.5, 0,0,+3.14,0,0)
+                position_list2 = [X_P[i][Max_BPR-1]+5, Y_P[i][x], 0,0,+1.57,0,0]
+                record_waypoints(waypoints_path, position_list2)
+                position_list2 = [X_P[i][Max_BPR-1]+5, Y_P[i][x]+1.5, 0,0,+3.14,0,0]
+                record_waypoints(waypoints_path, position_list2)
                 reverse = True
             
 

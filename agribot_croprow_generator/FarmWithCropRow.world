@@ -6360,16 +6360,7 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='oak_tree_1'>
-        <pose frame=''>18.9307 -1.80822 0 0 -0 0.725237</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose frame=''>18.9307 -1.80822 0 0 -0 0.725237</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
+     
       <model name='oak_tree_2'>
         <pose frame=''>3.50215 -8.51726 0 0 -0 0</pose>
         <scale>1 1 1</scale>
@@ -7276,72 +7267,7 @@
       </link>
       <pose frame=''>13.5259 7.95403 0 0 -0 0</pose>
     </model>
-    <model name='oak_tree_1'>
-      <static>1</static>
-      <link name='link'>
-        <collision name='collision'>
-          <geometry>
-            <mesh>
-              <uri>model://oak_tree/meshes/oak_tree.dae</uri>
-              <scale>1 1 1</scale>
-            </mesh>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='branch'>
-          <geometry>
-            <mesh>
-              <uri>model://oak_tree/meshes/oak_tree.dae</uri>
-              <submesh>
-                <name>Branch</name>
-              </submesh>
-              <scale>1 1 1</scale>
-            </mesh>
-          </geometry>
-          <material>
-            <script>
-              <uri>model://oak_tree/materials/scripts/</uri>
-              <uri>model://oak_tree/materials/textures/</uri>
-              <name>OakTree/Branch</name>
-            </script>
-          </material>
-        </visual>
-        <visual name='bark'>
-          <geometry>
-            <mesh>
-              <uri>model://oak_tree/meshes/oak_tree.dae</uri>
-              <submesh>
-                <name>Bark</name>
-              </submesh>
-              <scale>1 1 1</scale>
-            </mesh>
-          </geometry>
-          <material>
-            <script>
-              <uri>model://oak_tree/materials/scripts/</uri>
-              <uri>model://oak_tree/materials/textures/</uri>
-              <name>OakTree/Bark</name>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-        <gravity>1</gravity>
-      </link>
-      <pose frame=''>18.9307 -1.80822 0 0 -0 0</pose>
-    </model>
+
     <model name='pine_tree_2'>
       <static>1</static>
       <link name='link'>

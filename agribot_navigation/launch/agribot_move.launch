@@ -15,15 +15,17 @@
     <param name="base_global_planner" type="string" value="navfn/NavfnROS"/>
 <!--     <param name="base_global_planner" value="agribot_global_planner/AgribotGlobalPlanner"/>
  -->
-    <param name="base_local_planner" value="agribot_local_planner/AgribotLocalPlanner"/>
+    <!-- <param name="base_local_planner" value="agribot_local_planner/AgribotLocalPlanner"/> -->
     
-    <!--param name="base_local_planner" value="base_local_planner/TrajectoryPlannerROS"/-->
+    <!-- Load local_planner diff or omni parameters -->
+    <rosparam file="$(find agribot_navigation)/params/teb_local_planner.yaml" command="load" subst_value="true"/>   
 
+    <!-- <param name="base_local_planner" value="base_local_planner/TrajectoryPlannerROS"/>-->
     <!--param name="base_local_planner" value="teb_local_planner/TebLocalPlannerROS" />
     <param name="controller_frequency" value="10.0" /-->
     <!--param name="base_local_planner" value="simple_local_planner/SimpleLocalPlanner" /-->
     <!--remap from="sensor_pose_odo" to="/odometry/raw" /-->
-    <remap from="sensor_pose_odo" to="/mocap_odom" />
+    <remap from="sensor_pose_odo" to="/odom" />
     <remap from="cmd_vel" to="/cmd_vel" />
     <remap from="map" to="/map" />
 

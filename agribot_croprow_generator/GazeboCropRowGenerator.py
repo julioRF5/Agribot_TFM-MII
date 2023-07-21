@@ -4,7 +4,7 @@ import math
 import numpy as np
 import random
 
-GENERATE_FILE = True
+GENERATE_FILE = False
 RECORD_WAYPOINTS = True
 
 waypoints_path = "/home/juliorf/catkin_ws/src/julio_tfm/agribot-master/ROS_Waypoints_Processor/waypoints_files/waypoints.txt"
@@ -60,9 +60,9 @@ def waypoints2semicircle(punto_inicio, punto_fin, semi_circ):    # semi_circ = 1
 
 Row_Num = 6
 hilera = 2 #Numero de plantas en paralelo por cada hilera
-Max_BPR = 40 # maximum Big plants in each row
+Max_BPR = 10 # maximum Big plants in each row
 Max_SPR = 0 # maximum Small plant in each row
-Row_lenght = 25 # in meters
+Row_lenght = 5 # in meters
 Random_noise_magnitude = 1 # maximum random noise magitude in meters
 
 
@@ -151,7 +151,7 @@ if RECORD_WAYPOINTS:
                 reverse = False
             else:
                 print("recorro hilera stright")
-                safe_pos_list_strht = [X_P[i][Max_BPR-1]+5, Y_P[i][y], 0,0,+1.57,0,0]
+                safe_pos_list_strht = [X_P[i][Max_BPR-1]+5, Y_P[i][y], 0,0,-1.57,0,0]
                 record_waypoints(waypoints_path, safe_pos_list_strht)
                 pto_ini_strht = [X_P[i][Max_BPR-1]+5, Y_P[i][y]]
                 pto_fin_strht = [X_P[i][Max_BPR-1]+5, Y_P[i][y]+1.6]

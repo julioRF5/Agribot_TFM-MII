@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 import math
 
-punto_fin = (15, -5)
-punto_inicio = (15, -3.3)
+punto_inicio = (15, -5)
+punto_fin = (15, -3.3)
 # Calcular la distancia entre los dos puntos
 distancia = math.sqrt((punto_fin[0] - punto_inicio[0]) ** 2 + (punto_fin[1] - punto_inicio[1]) ** 2)
 semi = 1  #(derecho)

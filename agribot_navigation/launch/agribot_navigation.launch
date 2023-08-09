@@ -4,7 +4,7 @@
 
   <include file="$(find agribot_navigation)/launch/agribot_map.launch"/>
 
-  <include file="$(find agribot_navigation)/launch/agribot_move.launch"/>
+  <include file="$(find agribot_navigation)/launch/agribot_move_base_flex.launch"/>
   
   <!--include file="$(find agribot_launch)/launch/localization.launch"/-->
 

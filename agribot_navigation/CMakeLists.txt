@@ -8,8 +8,17 @@ project(agribot_navigation)
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
-  move_base
+  mbf_abstract_core
+  mbf_abstract_nav
+  mbf_costmap_core
+  mbf_costmap_nav
+  mbf_msgs
+  mbf_simple_nav
+  mbf_utility
+  geometry_msgs
   robot_localization
+  actionlib_msgs
+  genmsg
 )
 #add_library(local_planner_lib include/local_planner.cpp)
 ## System dependencies are found with CMake's conventions
@@ -61,14 +70,19 @@ find_package(catkin REQUIRED COMPONENTS
 
 ## Generate actions in the 'action' folder
 # add_action_files(
-#   FILES
+#   FILES 
+#   move_base_flex/exe_path
+# )
 #   Action1.action
 #   Action2.action
 # )
 
 ## Generate added messages and services with any dependencies listed here
-# generate_messages(
-#   DEPENDENCIES
+ generate_messages(DEPENDENCIES 
+    actionlib_msgs
+    mbf_msgs
+    geometry_msgs
+ )
 #   std_msgs  # Or other packages containing msgs
 # )
 
@@ -102,11 +116,17 @@ find_package(catkin REQUIRED COMPONENTS
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
+  CATKIN_DEPENDS 
+  actionlib_msgs
+  mbf_msgs
+  geometry_msgs
+  #std_msgs
+)
 #  INCLUDE_DIRS include
 #  LIBRARIES husky_navigation
 #  CATKIN_DEPENDS hector_slam husky_customization move_base outdoor_waypoint_nav robot_localization
 #  DEPENDS system_lib
-)
+
 
 ###########
 ## Build ##

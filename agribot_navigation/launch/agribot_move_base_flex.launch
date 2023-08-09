@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- Move Base Flex -->
+  <node pkg="mbf_costmap_nav" type="mbf_costmap_nav" name="move_base_flex" output="screen" >
+    <param name="tf_timeout" value="1.5"/>
+    <remap from="cmd_vel" to="/cmd_vel"/>
+    <remap from="odom" to="/odom"/>
+
+    <rosparam file="$(find agribot_navigation)/params/global_planner.yaml" command="load" />
+    <!-- Move base global costmap params-->
+    <rosparam file="$(find agribot_navigation)/params/costmap_common_params.yaml" command="load" ns="global_costmap" subst_value="true"/>
+    <rosparam file="$(find agribot_navigation)/params/global_costmap_params.yaml" command="load" subst_value="true"/>
+    <!-- Move base local costmap params-->
+    <rosparam file="$(find agribot_navigation)/params/costmap_common_params.yaml" command="load" ns="local_costmap" subst_value="true"/>
+    <rosparam file="$(find agribot_navigation)/params/local_costmap_params.yaml" command="load" subst_value="true"/>
+
+    <!-- Load local_planner for specific kinematics parameters -->
+    <rosparam file="$(find agribot_navigation)/params/teb_local_planner.yaml" command="load" subst_value="true"/>
+
+    <!-- MBF params -->
+    <rosparam file="$(find agribot_navigation)/params/move_base_flex/planners.yaml" command="load"/>
+    <rosparam file="$(find agribot_navigation)/params/move_base_flex/controllers.yaml" command="load"/>
+    <rosparam file="$(find agribot_navigation)/params/move_base_flex/recovery_behaviors.yaml" command="load" />
+    <rosparam file="$(find agribot_navigation)/params/move_base_flex/move_base_flex.yaml" command="load" subst_value="true"/>
+  </node>
+
+</launch>
+
+
+<!-- 
+
+
+# // Leer del txt
+# points = pointsfromtxt(TXT)
+
+// Crear mensaje tipo nav_msgs::Path
+path.points = points
+
+...
+
+goal = ExePathGoal()
+goal.path = path
+client.send_goal(goal)
+
+   -->
+

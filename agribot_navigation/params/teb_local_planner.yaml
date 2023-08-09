@@ -1,4 +1,5 @@
 base_local_planner: teb_local_planner/TebLocalPlannerROS
+
 TebLocalPlannerROS:
   odom_topic: /odom
   map_frame: map
@@ -25,8 +26,8 @@ TebLocalPlannerROS:
   max_vel_x: 1.2
   max_vel_x_backwards: 0.15
   max_vel_theta: 0.75
-  max_vel_y: 1.2
-  acc_lim_y: 0.2
+  max_vel_y: 0
+  acc_lim_y: 0
   acc_lim_x: 0.2
   acc_lim_theta: 0.2
   min_turning_radius: 0.0

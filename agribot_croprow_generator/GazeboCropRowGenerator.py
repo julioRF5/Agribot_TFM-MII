@@ -4,7 +4,7 @@ import math
 import numpy as np
 import random
 
-GENERATE_FILE = False
+GENERATE_FILE = True
 RECORD_WAYPOINTS = True
 
 waypoints_path = "/home/juliorf/catkin_ws/src/julio_tfm/agribot-master/ROS_Waypoints_Processor/waypoints_files/waypoints.txt"
@@ -49,7 +49,7 @@ def waypoints2semicircle(punto_inicio, punto_fin, semi_circ):    # semi_circ = 1
     for _ in range(cantidad_waypoints):
         x = centro_x + radio * math.cos(angulo_actual)
         y = centro_y + radio * math.sin(angulo_actual)
-        waypoints.append((x, y, 0, 0, 0, 0, 0))     # x, y, z, Ox, Oy, Oz, Ow
+        waypoints.append((x, y, 0, 0, 0, 0, 1))     # x, y, z, Ox, Oy, Oz, Ow
         if semi_circ == 1:
             angulo_actual -= ( angulo_inicio - angulo_fin) / (cantidad_waypoints - 1)
         else:
@@ -114,18 +114,18 @@ reverse = False #recorrer hilera del reves (X negativo)
 if RECORD_WAYPOINTS:
     with open(waypoints_path, "w") as archivo:
         archivo.write("")  #Escribe cadena vacia para borrar el contenido del fichero de texto.
-        pos_inicial = [X_P[0][0]-5, Y_P[0][0], 0,0,0,0,0]
+        pos_inicial = [X_P[0][0]-5, Y_P[0][0], 0,0,0,0,1]
         record_waypoints(waypoints_path, pos_inicial) #Primera posicion de aproximación
         
     for i in range(2*Row_Num):
         for y in range(Max_BPR):
             if i%2 == 0:  #En cada hilera hay a su vez dos hileras más. Solo guardamos la posicion de todos los borocolis de una de las hileras (las pares)
                 if reverse == False:
-                    pos_stright = [X_P[i][y], Y_P[i][y], 0,0,0,0,0]
+                    pos_stright = [X_P[i][y], Y_P[i][y], 0,0,0,0,1]
                     record_waypoints(waypoints_path, pos_stright)
                     
                 else:
-                    pos_reverse = [X_P[i][(Max_BPR-1)-y], Y_P[i][y], 0,0,0,0,0]
+                    pos_reverse = [X_P[i][(Max_BPR-1)-y], Y_P[i][y], 0,0,0,0,1]
                     print("voy a recorrer la hilera del reves, esta es mi posicion", pos_reverse)
                 
                     record_waypoints(waypoints_path, pos_reverse)
@@ -133,7 +133,7 @@ if RECORD_WAYPOINTS:
         if i%2 == 0:  #Guardamos posiciones de seguridad y posiciones para realizar la semicircunferencia
             if reverse:
                 print("recorro hilera reverse")
-                safe_pos_list_rev = [X_P[i][(Max_BPR-1)-y]-5, Y_P[i][y], 0,0,+1.57,0,0]     # primera posicion de seguridad
+                safe_pos_list_rev = [X_P[i][(Max_BPR-1)-y]-5, Y_P[i][y], 0,0,+1.57,0,1]     # primera posicion de seguridad
                 record_waypoints(waypoints_path, safe_pos_list_rev)
                 #position_list = [X_P[i][Max_BPR-1]-5, Y_P[i][x]+1.5, 0,0,0,0,0]
                 #record_waypoints(waypoints_path, position_list)
@@ -151,7 +151,7 @@ if RECORD_WAYPOINTS:
                 reverse = False
             else:
                 print("recorro hilera stright")
-                safe_pos_list_strht = [X_P[i][Max_BPR-1]+5, Y_P[i][y], 0,0,-1.57,0,0]
+                safe_pos_list_strht = [X_P[i][Max_BPR-1]+5, Y_P[i][y], 0,0,-1.57,0,1]
                 record_waypoints(waypoints_path, safe_pos_list_strht)
                 pto_ini_strht = [X_P[i][Max_BPR-1]+5, Y_P[i][y]]
                 pto_fin_strht = [X_P[i][Max_BPR-1]+5, Y_P[i][y]+1.6]

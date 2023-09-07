@@ -58,7 +58,7 @@ def waypoints2semicircle(punto_inicio, punto_fin, semi_circ):    # semi_circ = 1
     return waypoints
 
 
-Row_Num = 6
+Row_Num = 6 # Siempre par (volver a pos. origen es mas facil)
 hilera = 2 #Numero de plantas en paralelo por cada hilera
 Max_BPR = 10 # maximum Big plants in each row
 Max_SPR = 0 # maximum Small plant in each row
@@ -135,19 +135,20 @@ if RECORD_WAYPOINTS:
                 print("recorro hilera reverse")
                 safe_pos_list_rev = [X_P[i][(Max_BPR-1)-y]-5, Y_P[i][y], 0,0,+1.57,0,1]     # primera posicion de seguridad
                 record_waypoints(waypoints_path, safe_pos_list_rev)
+                   
                 #position_list = [X_P[i][Max_BPR-1]-5, Y_P[i][x]+1.5, 0,0,0,0,0]
                 #record_waypoints(waypoints_path, position_list)
                 pto_inicio_rev = (X_P[i][(Max_BPR-1)-y]-5, Y_P[i][y])       # punto de inicio para calcular la semicircuferencia (es el ultimo brocoli de la hilera actual)
                 pto_fin_rev = (X_P[i][(Max_BPR-1)-y]-5, Y_P[i][y] + 1.6)    # punto de fin para calcular la semicircuferencia (es el primer brocoli de la hilera siguiente)
-                                                                        # Entre dos subhileras PARES hay 1.6 metros, el 1.5 que puse yo era entre la subhilera impar y la siguiente par
+                                                                    # Entre dos subhileras PARES hay 1.6 metros, el 1.5 que puse yo era entre la subhilera impar y la siguiente par
                 wp_rev = waypoints2semicircle(pto_fin_rev, pto_inicio_rev, semi_circ= -1)
 
                 for waypoint in wp_rev:
-                        record_waypoints(waypoints_path, waypoint)
-                        print(waypoint)
-                        print("next wp")
+                    record_waypoints(waypoints_path, waypoint)
+                    print(waypoint)
+                    print("next wp")
 
-                
+            
                 reverse = False
             else:
                 print("recorro hilera stright")
@@ -164,6 +165,11 @@ if RECORD_WAYPOINTS:
 
                 reverse = True
             
+    if i == (2*Row_Num)-1:   #Es la ultima hilera. Llevo el robot a la posicion de partida
+                    print("he llegado al final")
+                    pos_partida = [-14.0, 0, 1.13,0,+1.57,0,1]
+                    record_waypoints(waypoints_path, pos_partida)
+
 
 if GENERATE_FILE:
     # Output files

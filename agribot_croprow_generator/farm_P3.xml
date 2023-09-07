@@ -71,7 +71,7 @@
         <kinematic>0</kinematic>
         <gravity>1</gravity>
       </link>
-      <pose frame=''>-16.2297 -5.28434 0 0 -0 0</pose>
+      <pose frame=''>-16.2297 7,411856 0 0 -0 0</pose>
     </model>
     <model name='pine_tree_4'>
       <static>1</static>

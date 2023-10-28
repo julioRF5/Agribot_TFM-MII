@@ -4,7 +4,7 @@ import math
 import numpy as np
 import random
 
-GENERATE_FILE = True
+GENERATE_FILE = False
 RECORD_WAYPOINTS = True
 
 waypoints_path = "/home/juliorf/catkin_ws/src/julio_tfm/agribot-master/ROS_Waypoints_Processor/waypoints_files/waypoints.txt"
@@ -60,9 +60,9 @@ def waypoints2semicircle(punto_inicio, punto_fin, semi_circ):    # semi_circ = 1
 
 Row_Num = 6 # Siempre par (volver a pos. origen es mas facil)
 hilera = 2 #Numero de plantas en paralelo por cada hilera
-Max_BPR = 10 # maximum Big plants in each row
+Max_BPR = 20 # maximum Big plants in each row       10
 Max_SPR = 0 # maximum Small plant in each row
-Row_lenght = 5 # in meters
+Row_lenght = 10 # in meters                         5
 Random_noise_magnitude = 1 # maximum random noise magitude in meters
 
 
@@ -133,7 +133,7 @@ if RECORD_WAYPOINTS:
         if i%2 == 0:  #Guardamos posiciones de seguridad y posiciones para realizar la semicircunferencia
             if reverse:
                 print("recorro hilera reverse")
-                safe_pos_list_rev = [X_P[i][(Max_BPR-1)-y]-5, Y_P[i][y], 0,0,+1.57,0,1]     # primera posicion de seguridad
+                safe_pos_list_rev = [X_P[i][(Max_BPR-1)-y]-5, Y_P[i][y], 0,0,0,0,1]  #safe_pos_list_rev = [X_P[i][(Max_BPR-1)-y]-5, Y_P[i][y], 0,0,+1.57,0,1] (creo que esta mal en cualquier caso seria el 1.57 en la componente Z del quaternio)  # primera posicion de seguridad, se fija tb la orientacion para encarar la curva
                 record_waypoints(waypoints_path, safe_pos_list_rev)
                    
                 #position_list = [X_P[i][Max_BPR-1]-5, Y_P[i][x]+1.5, 0,0,0,0,0]
@@ -152,7 +152,7 @@ if RECORD_WAYPOINTS:
                 reverse = False
             else:
                 print("recorro hilera stright")
-                safe_pos_list_strht = [X_P[i][Max_BPR-1]+5, Y_P[i][y], 0,0,-1.57,0,1]
+                safe_pos_list_strht = [X_P[i][Max_BPR-1]+5, Y_P[i][y], 0,0,0,0,1] #safe_pos_list_strht = [X_P[i][Max_BPR-1]+5, Y_P[i][y], 0,0,-1.57,0,1]
                 record_waypoints(waypoints_path, safe_pos_list_strht)
                 pto_ini_strht = [X_P[i][Max_BPR-1]+5, Y_P[i][y]]
                 pto_fin_strht = [X_P[i][Max_BPR-1]+5, Y_P[i][y]+1.6]
@@ -167,7 +167,7 @@ if RECORD_WAYPOINTS:
             
     if i == (2*Row_Num)-1:   #Es la ultima hilera. Llevo el robot a la posicion de partida
                     print("he llegado al final")
-                    pos_partida = [-14.0, 0, 1.13,0,+1.57,0,1]
+                    pos_partida = [-14.0, 0, 1.13,0,0,0,1]  # pos_partida = [-14.0, 0, 1.13,0,+1.57,0,1]
                     record_waypoints(waypoints_path, pos_partida)
 
 

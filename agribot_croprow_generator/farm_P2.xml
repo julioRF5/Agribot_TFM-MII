@@ -192,16 +192,7 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='pine_tree_3'>
-        <pose frame=''>-16.2297 -5.28434 0 0 -0 0</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose frame=''>-16.2297 -5.28434 0 0 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
+      
       <model name='pine_tree_4'>
         <pose frame=''>-13.2285 -8.33269 0 0 -0 0</pose>
         <scale>1 1 1</scale>

@@ -2,7 +2,7 @@ robot_frame: base_link
 map_frame: map
 global_frame: map
 
-controller_frequency: 20.0         # How long the controller will wait in seconds
+controller_frequency: 12.0         # 20, How long the controller will wait in seconds
                                   # without receiving a valid control before space-clearing
                                   # operations are performed
 controller_patience: 15.0

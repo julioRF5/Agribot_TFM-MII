@@ -58,11 +58,12 @@ def waypoints2semicircle(punto_inicio, punto_fin, semi_circ):    # semi_circ = 1
     return waypoints
 
 
-Row_Num = 6 # Siempre par (volver a pos. origen es mas facil)
-hilera = 2 #Numero de plantas en paralelo por cada hilera
-Max_BPR = 20 # maximum Big plants in each row       10
-Max_SPR = 0 # maximum Small plant in each row
-Row_lenght = 10 # in meters                         5
+Row_Num = 6             # Numero de hileras                                                                 
+hilera = 2              # Numero de plantas en paralelo por cada hilera
+Max_BPR = 20            # Numero máximo de plantas grandes en cada hilera                        10
+Row_lenght = 10         # Longitud de las hileras en metros                                                 5
+
+Max_SPR = 0         # maximum Small plant in each row
 Random_noise_magnitude = 1 # maximum random noise magitude in meters
 
 
@@ -121,6 +122,7 @@ if RECORD_WAYPOINTS:
         for y in range(Max_BPR):
             if i%2 == 0:  #En cada hilera hay a su vez dos hileras más. Solo guardamos la posicion de todos los borocolis de una de las hileras (las pares)
                 if reverse == False:
+                    
                     pos_stright = [X_P[i][y], Y_P[i][y], 0,0,0,0,1]
                     record_waypoints(waypoints_path, pos_stright)
                     
@@ -152,7 +154,7 @@ if RECORD_WAYPOINTS:
                 reverse = False
             else:
                 print("recorro hilera stright")
-                safe_pos_list_strht = [X_P[i][Max_BPR-1]+5, Y_P[i][y], 0,0,0,0,1] #safe_pos_list_strht = [X_P[i][Max_BPR-1]+5, Y_P[i][y], 0,0,-1.57,0,1]
+                safe_pos_list_strht = [X_P[i][Max_BPR-1]+5, Y_P[i][y], 0,0,0,-0.7071068,0.7071068] #safe_pos_list_strht = [X_P[i][Max_BPR-1]+5, Y_P[i][y], 0,0,-1.57,0,1]
                 record_waypoints(waypoints_path, safe_pos_list_strht)
                 pto_ini_strht = [X_P[i][Max_BPR-1]+5, Y_P[i][y]]
                 pto_fin_strht = [X_P[i][Max_BPR-1]+5, Y_P[i][y]+1.6]
@@ -167,7 +169,7 @@ if RECORD_WAYPOINTS:
             
     if i == (2*Row_Num)-1:   #Es la ultima hilera. Llevo el robot a la posicion de partida
                     print("he llegado al final")
-                    pos_partida = [-14.0, 0, 1.13,0,0,0,1]  # pos_partida = [-14.0, 0, 1.13,0,+1.57,0,1]
+                    pos_partida = [-14.0, 0, 1.13,0,0,0.7071068,0.7071068]  # pos_partida = [-14.0, 0, 1.13,0,+1.57,0,1]
                     record_waypoints(waypoints_path, pos_partida)
 
 

@@ -2,7 +2,7 @@ base_local_planner: teb_local_planner/TebLocalPlannerROS
 
 TebLocalPlannerROS:
   odom_topic: /odom
-  map_frame: map
+  map_frame: /map
 
   # Trajectory
 
@@ -12,7 +12,7 @@ TebLocalPlannerROS:
   min_samples: 3
   global_plan_overwrite_orientation: True
   global_plan_viapoint_sep: 0.5
-  max_global_plan_lookahead_dist: 3.0
+  max_global_plan_lookahead_dist: 3
   force_reinit_new_goal_dist: 1.0
   feasibility_check_no_poses: 5
   publish_feedback: false
@@ -25,11 +25,11 @@ TebLocalPlannerROS:
 
   max_vel_x: 1.2
   max_vel_x_backwards: 0.15
-  max_vel_theta: 0.75
+  max_vel_theta: 2.9999
   max_vel_y: 0
   acc_lim_y: 0
-  acc_lim_x: 0.2
-  acc_lim_theta: 0.2
+  acc_lim_x: 1.0
+  acc_lim_theta: 1.0
   min_turning_radius: 0.0
   wheelbase: 0.0
   cmd_angle_instead_rotvel: false
@@ -39,7 +39,7 @@ TebLocalPlannerROS:
 
   # GoalTolerance
 
-  xy_goal_tolerance: 0.5
+  xy_goal_tolerance: 1.0
   yaw_goal_tolerance: 3.1416
   free_goal_vel: False
 
@@ -67,17 +67,17 @@ TebLocalPlannerROS:
   weight_max_vel_x: 20
   weight_max_vel_y: 0
   weight_max_vel_theta: 20
-  weight_acc_lim_x: 1
+  weight_acc_lim_x: 1.0
   weight_acc_lim_y: 0
-  weight_acc_lim_theta: 1
-  weight_kinematics_nh: 10000
-  weight_kinematics_forward_drive: 800
-  weight_kinematics_turning_radius: 1
+  weight_acc_lim_theta: 150.0
+  weight_kinematics_nh: 10000.0
+  weight_kinematics_forward_drive: 580.0
+  weight_kinematics_turning_radius: 350.0
   weight_optimaltime: 10
   weight_obstacle: 50
-  weight_inflation: 1
+  weight_inflation: 1.0
 
-  weight_viapoint: 50
+  weight_viapoint: 260.0
   weight_adapt_factor: 2
 
   # Homotopy Class Planner
